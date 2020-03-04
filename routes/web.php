@@ -30,13 +30,17 @@
 //     return"Sou a página com paramento. O parametros são {$numero}, $segundo e $terceiro";
 // });
 
-Route::get('/meu-primeiro-caminho','NumeroController@numero');
+// Route::get('/meu-primeiro-caminho','NumeroController@numero');
 
-Route::get('/segunda-pagina/{aluno}','NumeroController@segundaPagina');
+// Route::get('/segunda-pagina/{aluno}','NumeroController@segundaPagina');
 
-Route::get('/par-ou-impar/{numero}/{opcional?}','NumeroController@parOuImpar');
+// Route::get('/par-ou-impar/{numero}/{opcional?}','NumeroController@parOuImpar');
+
+Route::get('/produtos',function(){
+    return view('produtoLista');
+});
         
-     
+    // Route::auth();
 
 //Route::get('/par-ou-impar/{numero}', function ($numero) {    
     // if($numero%2==0){
