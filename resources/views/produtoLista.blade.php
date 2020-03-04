@@ -1,3 +1,4 @@
+@extends('layout')
 <?php
 $produtos=[
     //'Bicicleta',
@@ -8,6 +9,9 @@ $produtos=[
 //Usuario logado no sistema:
 $user="Victor";
 ?>
+@section('conteudo')
+<h1>eu sou um novo conteudo</h1>
+@endsection
 
 <!DOCTYPE html>
 <html lang="en">
